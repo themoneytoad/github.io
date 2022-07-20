@@ -1,7 +1,7 @@
 const scene = new THREE.Scene();
 const container = document.getElementById("three");
-const width = container.offsetWidth;
-const height = container.offsetHeight;
+let width = container.offsetWidth;
+let height = container.offsetHeight;
 const camera = new THREE.PerspectiveCamera( 75, width / height, 0.1, 1000 );
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( width, height );
@@ -59,3 +59,13 @@ function animate() {
 }
 
 animate();
+
+function resize() {
+    width = container.offsetWidth;
+    height = container.offsetHeight;
+    renderer.setSize( width, height );
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+}
+
+window.addEventListener('resize', resize, false);
