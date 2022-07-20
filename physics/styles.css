@@ -13,6 +13,19 @@ a:hover {
     color: #1A1A1A;
 }
 
+.a2 {
+    font-family: "Barlow", serif;
+    color: #EFEEE7;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.a2:hover {
+    color: #79B5DD;
+}
+
 .bar  {
     background-color: #1A1A1A;
     height: 45pt;
