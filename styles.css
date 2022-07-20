@@ -56,6 +56,14 @@ h2 {
     text-align: center;
 }
 
+.mugshot {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    top: -180px;
+    display: flex;
+}
+
 p {
     font-family: "Barlow", serif;
     color: #F7F8FB;
