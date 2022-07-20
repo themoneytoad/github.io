@@ -3,7 +3,7 @@ const container = document.getElementById("three");
 let width = container.offsetWidth;
 let height = container.offsetHeight;
 const camera = new THREE.PerspectiveCamera( 75, width / height, 0.1, 1000 );
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({alpha:true});
 renderer.setSize( width, height );
 container.appendChild( renderer.domElement);
 
